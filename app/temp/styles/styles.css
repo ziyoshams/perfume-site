@@ -979,6 +979,11 @@ a{
 
   .site-header {
     background-color: rgba(47, 85, 114, 0.3);
+    position: fixed;
+  }
+
+  .site-header--dark {
+    background-color: rgba(23, 51, 72, 0.85);
   }
 }
 
@@ -1001,6 +1006,10 @@ a{
           transform-origin: 50% 0;
   -webkit-transform: translateX(-50%) scale(0.8);
           transform: translateX(-50%) scale(0.8);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   background-color: #2f5572;
   padding: 25px 36px;
 }
@@ -1011,6 +1020,11 @@ a{
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(0.54);
+            transform: scale(0.54);
   }
 }
 
@@ -1033,6 +1047,7 @@ a{
     padding-top: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
+    z-index: 10;
   }
 }
 
@@ -1199,10 +1214,14 @@ a{
     font-size: 1rem;
     background-color: transparent;
   }
+
+  .primary-nav a.is-current-link {
+    color: #d59541;
+  }
 }
 
 .site-footer{
-  
+  background: #2f5572;
 }
 
 .reveal-item{

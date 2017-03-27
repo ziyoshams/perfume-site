@@ -20,6 +20,7 @@
 
     @mixin atMedium{
       padding:0;
+    
     }
   }
 
@@ -57,6 +58,9 @@
       font-size:1rem;
       background-color: transparent;
 
+      &.is-current-link{
+        color:$mainOrange;
+      }
     }
 
   }
