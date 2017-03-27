@@ -15,8 +15,12 @@
 
   ul{
     margin:0;
-    padding:0;
+    padding:0 0 30px 0;
     @mixin clearfix;
+
+    @mixin atMedium{
+      padding:0;
+    }
   }
 
   li{
@@ -44,8 +48,8 @@
     font-weight: 300;
     display: block;
     text-decoration:none;
-    padding: 5px 8px;
-    font-size: 0.8rem;
+    padding: 8px 10px;
+    font-size: 1rem;
     background-color: $mainBlue;
 
     @mixin atMedium{

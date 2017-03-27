@@ -530,7 +530,7 @@ a{
 
 .large-hero__title{
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 2.4rem;
   color: #2f5572;
   margin:0;
 }
@@ -544,26 +544,12 @@ a{
 
 .large-hero__subtitle{
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #2f5572;
   margin:0;
 }
 
 @media (min-width:530px) {
-
-  .large-hero__subtitle {
-    font-size: 1.5rem;
-  }
-}
-
-@media(min-width:800px) {
-
-  .large-hero__subtitle {
-    font-size: 2rem;
-  }
-}
-
-@media(min-width:1010px) {
 
   .large-hero__subtitle {
     font-size: 2.9rem;
@@ -1045,6 +1031,8 @@ a{
   .site-header__menu-content {
     opacity: 1;
     padding-top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1062,6 +1050,7 @@ a{
   z-index: 10;
   top:10px;
   right:10px;
+  cursor: pointer;
 }
 
 .site-header__menu-icon::before{
@@ -1151,13 +1140,20 @@ a{
 
 .primary-nav ul{
   margin:0;
-  padding:0;
+  padding:0 0 30px 0;
 }
 
 .primary-nav ul::after {
   content: "";
   clear: both;
   display: table;
+}
+
+@media(min-width:800px) {
+
+  .primary-nav ul {
+    padding: 0;
+  }
 }
 
 .primary-nav li{
@@ -1191,8 +1187,8 @@ a{
   font-weight: 300;
   display: block;
   text-decoration:none;
-  padding: 5px 8px;
-  font-size: 0.8rem;
+  padding: 8px 10px;
+  font-size: 1rem;
   background-color: #2f5572;
 }
 
@@ -1207,4 +1203,8 @@ a{
 
 .site-footer{
   
+}
+
+.reveal-item{
+  opacity: 0;
 }

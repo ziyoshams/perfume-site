@@ -49,6 +49,7 @@
     @mixin atMedium{
       opacity: 1;
       padding-top: 0;
+      transform: scale(1);
     }
 
     &--is-visible{
@@ -65,6 +66,7 @@
     z-index: 10;
     top:10px;
     right:10px;
+    cursor: pointer;
 
     &::before{
       content:'';
