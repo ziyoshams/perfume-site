@@ -14,7 +14,6 @@ class StickyHeader{
     this.addSmoothScrolling();
   }
 
-
   addSmoothScrolling(){
     this.headerLinks.smoothScroll();
   }
