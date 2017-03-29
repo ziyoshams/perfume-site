@@ -11143,6 +11143,14 @@ var Modal = function () {
     value: function events() {
       this.openModalButton.click(this.openModal.bind(this));
       this.closeModalButton.click(this.closeModal.bind(this));
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: "keyPressHandler",
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
     }
   }, {
     key: "openModal",
