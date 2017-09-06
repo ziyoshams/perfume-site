@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ziyoshams/perfume-site.git"
+    "url": "git+https://github.com/ziyoshams/travel-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ziyoshams/perfume-site/issues"
+    "url": "https://github.com/ziyoshams/travel-site/issues"
   },
-  "homepage": "https://github.com/ziyoshams/perfume-site#readme",
+  "homepage": "https://github.com/ziyoshams/travel-site#readme",
   "dependencies": {
     "jquery": "^3.1.1",
     "jquery-smooth-scroll": "^2.1.2",
